@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion" />
+    <meta property="og:description" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion, 2023." />
+    <meta property="og:url" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/" />
+    <meta property="og:image" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/0c8d1bccbf3f0edff8d84646f87d165cfaee83a4/images/front.png" />
+
+    <meta property="article:publisher" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DreamFusion: Text-to-3D using 2D Diffusion" />
+    <meta name="twitter:description" content="We combine neural rendering with a multi-modal text-to-2D image diffusion generative model to synthesize diverse 3D objects from text." />
+    <meta name="twitter:url" content="https://dreamfusion3d.github.io/" />
+    <meta name="twitter:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png" />
     <title>Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion</title>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,7 +50,7 @@
           <div class="row">
             <div class="col-12">
               <h1>Instruct 3D-to-3D: <br> Text Instruction Guided 3D-to-3D conversion</h1>
-			  <!--<h4 style="color:#5a6268;"> NeurIPS 2020 (Spotlight) </h4>-->
+			  <!--<h4 style="color:#5a6268;"> 2020 (Spotlight) </h4>-->
 				<hr>
               <h5> <a href="https://kamata1729.github.io/" target="_blank">Hiromichi Kamata</a>, Yuiko Sakuma, Akio Hayakawa, Masato Ishii, Takuya Narihira </h5>
 				<p>Sony Group Corporation</p>
@@ -161,20 +174,21 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="video-compare-container" id="trexcompareDiv">
-                    <video class="video" id="trexcompare" loop playsinline autoPlay muted src="video/trex_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="trexcompareMerge"></canvas>
-                    <h4 class="caption">make it a pixel art</h4>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="video-compare-container" id="ferncompareDiv">
-                    <video class="video" id="ferncompare" loop playsinline autoPlay muted src="video/fern_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="ferncompareMerge"></canvas>
-                    <h4 class="caption">convert it to a ice statue</h4>
-                </div>
-            </div>
+          <div class="col-md-6">
+              <div class="video-compare-container" id="trexcompareDiv">
+                  <video class="video" id="trexcompare" loop playsinline autoPlay muted src="video/trex_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
+                  <canvas height=0 class="videoMerge" id="trexcompareMerge"></canvas>
+                  <h4 class="caption">make it a pixel art</h4>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="video-compare-container" id="ferncompareDiv">
+                  <video class="video" id="ferncompare" loop playsinline autoPlay muted src="video/fern_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
+                  <canvas height=0 class="videoMerge" id="ferncompareMerge"></canvas>
+                  <h4 class="caption">convert it to an ice statue</h4>
+              </div>
+          </div>
+        </div>
       </div>
 		  <br><br>
     </section>
@@ -320,7 +334,7 @@
                 <source src="./video/fern/fern_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
-              <h5 class="caption">convert it to a ice statue</h5>
+              <h5 class="caption">convert it to an ice statue</h5>
             </div>
           </div>
         </div>
@@ -359,7 +373,7 @@
                 <source src="./video/flower/flower_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
-              <h5 class="caption">convert it to a ice statue</h5>
+              <h5 class="caption">convert it to an ice statue</h5>
             </div>
 
             <div class="item">
@@ -450,7 +464,7 @@
                 <source src="./video/lego/lego_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
-              <h5 class="caption">convert it to a ice statue</h5>
+              <h5 class="caption">convert it to an ice statue</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_rubber" autoplay controls muted loop playsinline width="100%">

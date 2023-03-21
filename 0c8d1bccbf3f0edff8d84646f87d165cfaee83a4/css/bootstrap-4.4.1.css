@@ -5249,7 +5249,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .bibtexsection {
   font-family: "Courier",monospace;
   font-size:16px;
-  white-space:pre;
+  white-space:pre-line;
   background-color: #e9eeef;
   text-align:left;
 }

@@ -10,14 +10,14 @@
     <meta property="og:title" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion" />
     <meta property="og:description" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion, 2023." />
     <meta property="og:url" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/" />
-    <meta property="og:image" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/0c8d1bccbf3f0edff8d84646f87d165cfaee83a4/images/front.png" />
+    <meta property="og:image" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/images/front.png" />
 
     <meta property="article:publisher" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DreamFusion: Text-to-3D using 2D Diffusion" />
-    <meta name="twitter:description" content="We combine neural rendering with a multi-modal text-to-2D image diffusion generative model to synthesize diverse 3D objects from text." />
-    <meta name="twitter:url" content="https://dreamfusion3d.github.io/" />
-    <meta name="twitter:image" content="https://dreamfusion3d.github.io/assets/images/dreamfusion_samples.png" />
+    <meta name="twitter:title" content="Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion" />
+    <meta name="twitter:description" content="Our Instruct 3D-to-3D is able to convert a 3D scene according to the text instruction." />
+    <meta name="twitter:url" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/" />
+    <meta name="twitter:image" content="https://hiromichikamata.github.io/Instruct3dto3d.github.io/images/front.png" />
     <title>Instruct 3D-to-3D: Text Instruction Guided 3D-to-3D conversion</title>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -70,14 +70,14 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="horns_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_source_compressed.mp4"
+                <source src="./static/video/horns/horns_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
             </div>
             <div class="item">
               <video poster="" id="horns_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_lego_compressed.mp4"
+                <source src="./static/video/horns/horns_lego_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it Lego blocks</h5>
@@ -85,7 +85,7 @@
 
             <div class="item">
               <video poster="" id="horns_picasso" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_picasso_compressed.mp4"
+                <source src="./static/video/horns/horns_picasso_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Picasso?</h5>
@@ -93,7 +93,7 @@
 
             <div class="item">
               <video poster="" id="horns_metal" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_metal_compressed.mp4"
+                <source src="./static/video/horns/horns_metal_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to silver metal machine style</h5>
@@ -101,7 +101,7 @@
 
             <div class="item">
               <video poster="" id="horns_fallout4" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_fallout4_compressed.mp4"
+                <source src="./static/video/horns/horns_fallout4_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it rusty and dilapidated style of fallout4</h5>
@@ -109,7 +109,7 @@
 
             <div class="item">
               <video poster="" id="horns_candy" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_candy_compressed.mp4"
+                <source src="./static/video/horns/horns_candy_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of candies?</h5>
@@ -117,7 +117,7 @@
             
             <div class="item">
               <video poster="" id="horns_diamond" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/horns/horns_diamond_compressed.mp4"
+                <source src="./static/video/horns/horns_diamond_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of diamonds?</h5>
@@ -134,7 +134,7 @@
             <h2>Abstract</h2>
 			      <hr style="margin-top:0px">
             <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-              <source src="video/teaser_compressed.mp4" type="video/mp4">
+              <source src="./static/video/teaser_compressed.mp4" type="video/mp4">
             </video>
             <p class="text-left">We propose a high-quality 3D-to-3D conversion method, Instruct 3D-to-3D. Our method is designed for a novel task, which is to convert a given 3D scene to another scene according to text instructions. Instruct 3D-to-3D applies pretrained Image-to-Image diffusion models for 3D-to-3D conversion. This enables the likelihood maximization of each viewpoint image and high-quality 3D generation. In addition, our proposed method explicitly inputs the source 3D scene as a condition, which enhances 3D consistency and controllability of how much of the source 3D scene structure is reflected. We also propose dynamic scaling, which allows the intensity of the geometry transformation to be adjusted.
                   We performed quantitative and qualitative evaluations and showed that our proposed method achieves higher quality 3D-to-3D conversions than baseline methods.</p>
@@ -176,14 +176,14 @@
         <div class="row">
           <div class="col-md-6">
               <div class="video-compare-container" id="trexcompareDiv">
-                  <video class="video" id="trexcompare" loop playsinline autoPlay muted src="video/trex_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
+                  <video class="video" id="trexcompare" loop playsinline autoPlay muted src="./static/video/trex_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
                   <canvas height=0 class="videoMerge" id="trexcompareMerge"></canvas>
                   <h4 class="caption">make it a pixel art</h4>
               </div>
           </div>
           <div class="col-md-6">
               <div class="video-compare-container" id="ferncompareDiv">
-                  <video class="video" id="ferncompare" loop playsinline autoPlay muted src="video/fern_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
+                  <video class="video" id="ferncompare" loop playsinline autoPlay muted src="./static/video/fern_compare_compressed.mp4" onplay="resizeAndPlay(this)"></video>
                   <canvas height=0 class="videoMerge" id="ferncompareMerge"></canvas>
                   <h4 class="caption">convert it to an ice statue</h4>
               </div>
@@ -207,7 +207,7 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="trex_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_source_compressed.mp4"
+                <source src="./static/video/trex/trex_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
@@ -215,7 +215,7 @@
 
             <div class="item">
               <video poster="" id="trex_diamond" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_diamond_compressed.mp4"
+                <source src="./static/video/trex/trex_diamond_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of diamonds?</h5>
@@ -223,7 +223,7 @@
 
             <div class="item">
               <video poster="" id="trex_utagawa" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_utagawa_compressed.mp4"
+                <source src="./static/video/trex/trex_utagawa_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Hiroshige Utagawa?</h5>
@@ -231,7 +231,7 @@
 
             <div class="item">
               <video poster="" id="trex_fire" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_fire_compressed.mp4"
+                <source src="./static/video/trex/trex_fire_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was on fire?</h5>
@@ -239,7 +239,7 @@
             
             <div class="item">
               <video poster="" id="trex_munch" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_munch_compressed.mp4"
+                <source src="./static/video/trex/trex_munch_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Edvard Munch?</h5>
@@ -247,21 +247,21 @@
 
             <div class="item">
               <video poster="" id="trex_metal" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_metal_compressed.mp4"
+                <source src="./static/video/trex/trex_metal_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to silver metal machine style</h5>
             </div>
             <div class="item">
               <video poster="" id="trex_picasso" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_picasso_compressed.mp4"
+                <source src="./static/video/trex/trex_picasso_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Picasso?</h5>
             </div>
             <div class="item">
               <video poster="" id="trex_pixelart" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/trex/trex_pixelart_compressed.mp4"
+                <source src="./static/video/trex/trex_pixelart_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it a pixel art</h5>
@@ -278,7 +278,7 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="fern_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_source_compressed.mp4"
+                <source src="./static/video/fern/fern_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
@@ -286,7 +286,7 @@
 
             <div class="item">
               <video poster="" id="fern_fire" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_fire_compressed.mp4"
+                <source src="./static/video/fern/fern_fire_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was on fire?</h5>
@@ -294,7 +294,7 @@
 
             <div class="item">
               <video poster="" id="fern_cyberpunk2077" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_cyberpunk2077_compressed.mp4"
+                <source src="./static/video/fern/fern_cyberpunk2077_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it a near futuristic night city style of Cyberpunk2077</h5>
@@ -302,7 +302,7 @@
 
             <div class="item">
               <video poster="" id="fern_banksy" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_banksy_compressed.mp4"
+                <source src="./static/video/fern/fern_banksy_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Banksy?</h5>
@@ -310,28 +310,28 @@
             
             <div class="item">
               <video poster="" id="fern_vegetables" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_vegetables_compressed.mp4"
+                <source src="./static/video/fern/fern_vegetables_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to vegetables</h5>
             </div>
             <div class="item">
               <video poster="" id="fern_utagawa" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_utagawa_compressed.mp4"
+                <source src="./static/video/fern/fern_utagawa_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Hiroshige Utagawa?</h5>
             </div>
             <div class="item">
               <video poster="" id="fern_pixelart" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_pixelart_compressed.mp4"
+                <source src="./static/video/fern/fern_pixelart_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it a pixel art</h5>
             </div>
             <div class="item">
               <video poster="" id="fern_icestatue" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/fern/fern_icestatue_compressed.mp4"
+                <source src="./static/video/fern/fern_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to an ice statue</h5>
@@ -348,21 +348,21 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="flower_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_source_compressed.mp4"
+                <source src="./static/video/flower/flower_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
             </div>
             <div class="item">
               <video poster="" id="flower" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_metal_compressed.mp4"
+                <source src="./static/video/flower/flower_metal_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to a mechanical flower made of silver metal</h5>
             </div>
             <div class="item">
               <video poster="" id="flower_pixelart" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_pixelart_compressed.mp4"
+                <source src="./static/video/flower/flower_pixelart_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it a pixel art</h5>
@@ -370,7 +370,7 @@
 
             <div class="item">
               <video poster="" id="flower_icestatue" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_icestatue_compressed.mp4"
+                <source src="./static/video/flower/flower_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to an ice statue</h5>
@@ -378,7 +378,7 @@
 
             <div class="item">
               <video poster="" id="flower_lego" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_lego_compressed.mp4"
+                <source src="./static/video/flower/flower_lego_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it Lego blocks</h5>
@@ -386,21 +386,21 @@
             
             <div class="item">
               <video poster="" id="flower_gogh" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_gogh_compressed.mp4"
+                <source src="./static/video/flower/flower_gogh_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Van Gogh?</h5>
             </div>
             <div class="item">
               <video poster="" id="flower_munch" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_munch_compressed.mp4"
+                <source src="./static/video/flower/flower_munch_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was painted by Edvard Munch?</h5>
             </div>
             <div class="item">
               <video poster="" id="flower_candy" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/flower/flower_candy_compressed.mp4"
+                <source src="./static/video/flower/flower_candy_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of candies?</h5>
@@ -417,21 +417,21 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="lego_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_source_compressed.mp4"
+                <source src="./static/video/lego/lego_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_choco" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_choco_compressed.mp4"
+                <source src="./static/video/lego/lego_choco_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it chocolate</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_minecraft" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_minecraft_compressed.mp4"
+                <source src="./static/video/lego/lego_minecraft_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">turn it to Minecraft style</h5>
@@ -439,7 +439,7 @@
 
             <div class="item">
               <video poster="" id="lego_tinplate" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_tinplate_compressed.mp4"
+                <source src="./static/video/lego/lego_tinplate_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it a tinplate toy</h5>
@@ -447,28 +447,28 @@
             
             <div class="item">
               <video poster="" id="lego_fire" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_fire_compressed.mp4"
+                <source src="./static/video/lego/lego_fire_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was on fire?</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_paper" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_paper_compressed.mp4"
+                <source src="./static/video/lego/lego_paper_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of paper</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_icestatue" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_icestatue_compressed.mp4"
+                <source src="./static/video/lego/lego_icestatue_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to an ice statue</h5>
             </div>
             <div class="item">
               <video poster="" id="lego_rubber" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/lego/lego_rubber_compressed.mp4"
+                <source src="./static/video/lego/lego_rubber_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of rubber?</h5>
@@ -484,7 +484,7 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <video poster="" id="chair_source" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_source_compressed.mp4"
+                <source src="./static/video/chair/chair_source_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">source 3D scene</h5>
@@ -492,7 +492,7 @@
 
             <div class="item">
               <video poster="" id="chair_mechanical" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_mechanical_compressed.mp4"
+                <source src="./static/video/chair/chair_mechanical_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to a mechanical chair made of metal</h5>
@@ -500,7 +500,7 @@
 
              <div class="item">
               <video poster="" id="chair_sofa" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_sofa_compressed.mp4"
+                <source src="./static/video/chair/chair_sofa_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">convert it to a sofa</h5>
@@ -508,14 +508,14 @@
             
             <div class="item">
               <video poster="" id="chair_paper" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_paper_compressed.mp4"
+                <source src="./static/video/chair/chair_paper_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was made of paper?</h5>
             </div>
             <div class="item">
               <video poster="" id="chair_crystal" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_crystal_compressed.mp4"
+                <source src="./static/video/chair/chair_crystal_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it crystal</h5>
@@ -523,35 +523,35 @@
 
             <div class="item">
               <video poster="" id="chair_jelly" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_jelly_compressed.mp4"
+                <source src="./static/video/chair/chair_jelly_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it green jelly</h5>
             </div>
             <div class="item">
               <video poster="" id="chair_wood" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_wood_compressed.mp4"
+                <source src="./static/video/chair/chair_wood_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">make it wood</h5>
             </div>
             <div class="item">
               <video poster="" id="chair_candy" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_candy_compressed.mp4"
+                <source src="./static/video/chair/chair_candy_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption"> What if it was made of candies?</h5>
             </div>
             <div class="item">
               <video poster="" id="chair_flowers" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_flowers_compressed.mp4"
+                <source src="./static/video/chair/chair_flowers_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption"> make it flowers</h5>
             </div>
             <div class="item">
               <video poster="" id="chair_porcelain" autoplay controls muted loop playsinline width="100%">
-                <source src="./video/chair/chair_porcelain_compressed.mp4"
+                <source src="./static/video/chair/chair_porcelain_compressed.mp4"
                         type="video/mp4">
               </video>
               <h5 class="caption">What if it was porcelain?</h5>
